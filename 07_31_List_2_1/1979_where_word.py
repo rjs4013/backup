@@ -18,6 +18,7 @@ for x in range(T):
             if arr[i][j:j+K+2] == [0] + [1]*K + [0]:
                 count += 1
 
+    # 행열 바꿔주기
     for i in range(N+2):
         for j in range(N+2):
             if i < j:
