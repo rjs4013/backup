@@ -22,17 +22,17 @@
 #     return 0
 #
 
-T = 10
-for _ in range(1, T+1):
-    test_case = int(input())
-    arr = [list(map(int, input().strip())) for _ in range(16)]
-    N = 16
-    for i in range(N):
-        for j in range(N):
-            if arr[i][j] != 2: continue
-            si, sj = i, j
-    ans = road(si,sj)
-    print(f'#{test_case} {ans}')
+# T = 10
+# for _ in range(1, T+1):
+#     test_case = int(input())
+#     arr = [list(map(int, input().strip())) for _ in range(16)]
+#     N = 16
+#     for i in range(N):
+#         for j in range(N):
+#             if arr[i][j] != 2: continue
+#             si, sj = i, j
+#     ans = road(si,sj)
+#     print(f'#{test_case} {ans}')
 
 # DFS 활용
 def dfs(ci, cj):
