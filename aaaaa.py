@@ -1,16 +1,6 @@
-def left_shift(arr, n): # 배열, 왼쪽으로 이동시킬 횟수
-    new_arr = [None for _ in range(len(arr))]
-    for i in range(len(arr)):
-        new_arr[i-n] = arr[i]
-    return new_arr
-
-def right_shifr(arr, n): # 배열, 오른쪽으로 이동시킬 횟수
-    new_arr = [None for _ in range(arr)]
-    for i in range(len(arr)):
-        new_arr[i] = arr[i-n]
-    return new_arr
-
-arr = [1, 2, 3, 4, 5]
-
-ans = right_shifr(arr, 1)
-print(ans)
+def recursive_function(i):
+    if i == 30:
+        return
+    print(i, '번째 재귀함수에서', i+1, '번째 재귀함수를 호출합니다')
+    recursive_function(i+1)
+    print(i, '번쨰 재귀함수를 종료합니다.')
