@@ -5,8 +5,6 @@ def preorder(A):
         preorder(tree[A][0])
         preorder(tree[A][1])
 
-
-
 T = int(input())
 for test_case in range(1, T+1):
     E, N = map(int, input().split())

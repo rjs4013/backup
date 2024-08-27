@@ -4,6 +4,8 @@ def lvr(A):
         lvr(tree[A][0])
         ans.append(A)
         lvr(tree[A][1])
+    else:
+        return
 
 T = int(input())
 for test_case in range(1, T+1):
@@ -31,10 +33,3 @@ for test_case in range(1, T+1):
     b = ''.join(map(str, re_ans))
 
     print(f'#{test_case} {a} {b}')
-
-
-
-
-
-
-

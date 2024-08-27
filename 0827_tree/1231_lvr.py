@@ -4,7 +4,8 @@ def lvr(A):
         lvr(tree[A][0])
         ans.append(tree[A][2])
         lvr(tree[A][1])
-
+    else:
+        return
 
 T = 10
 for test_case in range(1, T+1):
@@ -19,6 +20,7 @@ for test_case in range(1, T+1):
             tree[i][1] = arr[i][3]
         elif len(arr[i]) == 3:
             tree[i][0] = arr[i][2]
+
     for j in range(1, len(arr)):
         tree[j].append(arr[j][1])
 
