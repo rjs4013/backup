@@ -14,6 +14,7 @@ for test_case in range(1,T+1):
         tree[i][0] = i*2
         if i*2+1 <= N:
             tree[i][1] = i*2+1
+    print(tree)
 
     ans = []
     lvr(1)
