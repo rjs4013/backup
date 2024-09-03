@@ -8,10 +8,11 @@ def dfs(n):
         return
 
     for i in range(L-1):
-        v = []
         for j in range(i+1, L):
             num[i], num[j] = num[j], num[i]
-
+            # 여기까진 기본적인 백트래킹
+            # 한번 해본 연산이 있다면 더 갈필요없다.
+            # 같은 높이에서 갔었던 숫자가 있다면 그 밑에 있는 숫자들은 이미 최댓값을 구한 것이기 때문에 갈 필요가 없다.
             change = int(''.join(map(str, num)))
             if (n, change) not in v:
                 dfs(n+1)
@@ -26,6 +27,7 @@ for test_case in range(1, T+1):
 
     L = len(num)
     ans = 0
+    v = []
     dfs(0)
     print(f'#{test_case} {ans}')
 
