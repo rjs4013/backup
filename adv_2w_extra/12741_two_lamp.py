@@ -9,5 +9,3 @@ for test_case in range(1, T+1):
     ans.append(a)
 for i in range(len(ans)):
     print(f'#{i+1} {ans[i]}')
-
-
