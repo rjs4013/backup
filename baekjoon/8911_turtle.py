@@ -10,7 +10,6 @@ for _ in range(T):
     # 거북이 지나간 경로 최대, 최소값 저장
     max_x, min_x = 0, 0
     max_y, min_y = 0, 0
-    max_y, min_y = 0, 0
     # 이동 시작
     for com in arr:
         if com == 'F': # 전진
